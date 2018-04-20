@@ -1,10 +1,7 @@
 ﻿namespace prjTask1
 {
-    public class Program
+    public class TreesCompare
     {
-        static void Main(string[] args)
-        {
-        }
         /// <summary>
         /// 1) We have a class representing binary tree nodes: 
         //class BTN
@@ -18,7 +15,7 @@
         /// <param name="tree1"></param>
         /// <param name="tree2"></param>
         /// <param name="isEqual"></param>
-        public static bool CompareTrees(BTN tree1, BTN tree2)
+        public bool CompareTrees(BTN tree1, BTN tree2)
         {
             bool areEqual = true;
             if (tree1 != null && tree2 != null)

@@ -58,10 +58,11 @@ namespace prjTask2
         public static Collection<Element> GetUniqueElementsByNumAndAgeGreaterThan20(Collection<Element> sortedElements)
         {
             Collection<Element> uniqueElements = new Collection<Element>();
-            foreach (Element element in sortedElements.Where(x => x.age > 20))
+            foreach (Element element in sortedElements.Where(x => x.age > 20)) // Getting only elements where age is greater than 20
             {
-                if (uniqueElements.FirstOrDefault(x => x.num.Equals(element.num)) == null)
+                if (uniqueElements.FirstOrDefault(x => x.num.Equals(element.num)) == null) // checking if there is an element with the sane 'num'
                 {
+                    //If no element was found, than add to the result list.
                     uniqueElements.Add(element);
                 }
             }

@@ -48,7 +48,7 @@ namespace prjTask1.Tests
 
             #endregion
 
-            Assert.AreEqual(true, Program.CompareTrees(tree1, tree2));
+            Assert.AreEqual(true, new TreesCompare().CompareTrees(tree1, tree2));
         }
         [TestMethod]
         public void CompareTrees_DifferentValues_MustReturnFalse()
@@ -91,7 +91,7 @@ namespace prjTask1.Tests
 
             #endregion
 
-            Assert.AreEqual(false, Program.CompareTrees(tree1, tree2));
+            Assert.AreEqual(false, new TreesCompare().CompareTrees(tree1, tree2));
         }
 
         [TestMethod]
@@ -126,7 +126,7 @@ namespace prjTask1.Tests
 
             #endregion
 
-            Assert.AreEqual(false, Program.CompareTrees(tree1, tree2));
+            Assert.AreEqual(false, new TreesCompare().CompareTrees(tree1, tree2));
         }
     }
 }
