@@ -59,10 +59,10 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CreateTables.sql" />
-    <None Include="TaskResolution.sql" />
+    <None Include="01 - CreateTables.sql" />
+    <None Include="03 - TaskResolution.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="InsertValues.sql" />
+    <Build Include="02 - InsertValues.sql" />
   </ItemGroup>
 </Project>
